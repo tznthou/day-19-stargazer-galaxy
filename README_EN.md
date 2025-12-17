@@ -8,7 +8,7 @@
 
 Turn every stargazer into a star in your project's galaxy.
 
-![Stargazer Galaxy](assets/galaxy.svg)
+![Stargazer Galaxy](assets/galaxy.png)
 
 > ⭐ **Star this repo and you'll appear in the galaxy!**
 
@@ -27,7 +27,7 @@ Turn every stargazer into a star in your project's galaxy.
 ## How Does This Actually Work?
 
 > **Common Misconception**: "README.md generates the image"
-> **Correct Understanding**: README.md never changes — what changes is the `galaxy.svg` it references
+> **Correct Understanding**: README.md never changes — what changes is the `galaxy.png` it references
 
 ### Complete Flow
 
@@ -44,7 +44,7 @@ Script calls GitHub API to get all Stargazers
        ↓
 Golden spiral algorithm calculates each position
        ↓
-New assets/galaxy.svg is generated
+New assets/galaxy.png is generated
        ↓
 Action auto commits + pushes
        ↓
@@ -56,10 +56,10 @@ The image in README "appears" updated
 README.md always contains just this one line:
 
 ```markdown
-![Stargazer Galaxy](assets/galaxy.svg)
+![Stargazer Galaxy](assets/galaxy.png)
 ```
 
-This line of code never changes. But since the `assets/galaxy.svg` file gets updated by the Action, when you refresh the page, the image content changes.
+This line of code never changes. But since the `assets/galaxy.png` file gets updated by the Action, when you refresh the page, the image content changes.
 
 **Think of it like a picture frame**: The frame (README) stays the same, but the photo inside (SVG) gets swapped.
 
@@ -83,7 +83,7 @@ flowchart LR
     end
 
     subgraph Output["Output"]
-        SVG["galaxy.svg<br/>(this changes)"]
+        SVG["galaxy.png<br/>(this changes)"]
         README["README.md<br/>(this stays same)"]
     end
 
@@ -149,7 +149,7 @@ cd day-19-stargazer-galaxy
 npm run demo
 
 # Open to view
-open assets/galaxy.svg
+open assets/galaxy.png
 ```
 
 ### Install to Your Repo
@@ -176,12 +176,12 @@ assets/                       → Output directory (empty is fine)
 1. Go to **Actions** tab
 2. Find **Update Stargazer Galaxy**
 3. Click **Run workflow**
-4. Wait ~30 seconds, `assets/galaxy.svg` will be created
+4. Wait ~30 seconds, `assets/galaxy.png` will be created
 
 #### Step 4: Display in README
 
 ```markdown
-![Stargazer Galaxy](assets/galaxy.svg)
+![Stargazer Galaxy](assets/galaxy.png)
 ```
 
 ---
@@ -196,7 +196,7 @@ day-19-stargazer-galaxy/
 ├── scripts/
 │   └── generate-galaxy.js      # Core generation script
 ├── assets/
-│   └── galaxy.svg              # Generated galaxy
+│   └── galaxy.png              # Generated galaxy
 ├── package.json
 ├── README.md                   # Documentation (Chinese)
 └── README_EN.md                # Documentation (English)

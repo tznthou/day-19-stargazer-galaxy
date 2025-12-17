@@ -11,10 +11,13 @@
     "github",
     "stargazers",
     "visualization",
-    "svg",
+    "png",
     "github-action"
   ],
   "author": "",
   "license": "MIT",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "puppeteer": "^23.0.0"
+  }
 }

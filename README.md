@@ -8,7 +8,7 @@
 
 把每一個按下 Star 的支持者，變成你專案銀河中的一顆恆星。
 
-![Stargazer Galaxy](assets/galaxy.svg)
+![Stargazer Galaxy](assets/galaxy.png)
 
 > ⭐ **Star 這個 Repo，你就會出現在銀河裡！**
 
@@ -56,7 +56,7 @@ README 引用的圖片「看起來」更新了
 README.md 裡永遠只有這一行：
 
 ```markdown
-![Stargazer Galaxy](assets/galaxy.svg)
+![Stargazer Galaxy](assets/galaxy.png)
 ```
 
 這行程式碼從頭到尾都不會改變。但因為 `assets/galaxy.svg` 這個檔案被 Action 更新了，所以當你重新整理頁面時，圖片內容就變了。
@@ -181,7 +181,7 @@ assets/                       → 輸出目錄（空的即可）
 #### 步驟 4：顯示在 README
 
 ```markdown
-![Stargazer Galaxy](assets/galaxy.svg)
+![Stargazer Galaxy](assets/galaxy.png)
 ```
 
 ---
