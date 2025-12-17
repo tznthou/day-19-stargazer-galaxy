@@ -24,6 +24,29 @@ Turn every stargazer into a star in your project's galaxy.
 
 ---
 
+## Comparison with Other Tools
+
+There are several stargazer visualization tools available. Here's how we compare:
+
+| Feature | **Stargazer Galaxy** | [Repository Roster](https://github.com/varunsridharan/action-repository-roster) | [Repo Roster](https://reporoster.com/) | [Star History](https://star-history.com/) |
+|---------|:--------------------:|:-----------------:|:-----------:|:------------:|
+| **Visual Style** | 🌌 Golden Spiral | 📋 Table/List | 🔲 Grid Cards | 📈 Line Chart |
+| **Display** | Avatar + Glow | Avatar ± Name | Avatar Grid | Statistics |
+| **Output Format** | PNG | HTML/MD | SVG | SVG |
+| **Update Method** | Action commit | Action edits README | Live API | Live API |
+| **Self-hosted** | ✅ | ✅ | ❌ | ❌ |
+| **Customization** | High (edit JS) | Medium (params) | Low | Low |
+| **Layout Algorithm** | Fibonacci Spiral | Sequential | Grid | Time Series |
+
+### What Makes Us Different
+
+- **Golden Spiral Layout**: Using 137.508° golden angle, not boring grids or lists
+- **Seeded Random**: Same person always at the same position, coordinates determined by username
+- **Art-focused**: Colorful glow + galaxy background, visual aesthetics over pure functionality
+- **Fully Self-hosted**: No dependency on third-party services, data stays in your repo
+
+---
+
 ## How Does This Actually Work?
 
 > **Common Misconception**: "README.md generates the image"

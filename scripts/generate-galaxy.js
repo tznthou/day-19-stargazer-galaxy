@@ -38,13 +38,14 @@ const CONFIG = {
 // Seeded Random（確保同一 ID 永遠在同位置）
 // ============================================
 function seededRandom(seed) {
-  const hash = seed.split('').reduce((acc, char) => {
+  let hash = seed.split('').reduce((acc, char) => {
     return ((acc << 5) - acc) + char.charCodeAt(0);
   }, 0);
 
-  // Mulberry32 algorithm
+  // Mulberry32 algorithm（正確版本：每次呼叫更新 state）
   return function() {
-    let t = (hash + 0x6D2B79F5) | 0;
+    hash = (hash + 0x6D2B79F5) | 0;
+    let t = hash;
     t = Math.imul(t ^ (t >>> 15), t | 1);
     t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
     return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
@@ -160,12 +161,13 @@ function generateHTML(stargazers) {
     </div>`;
   }).join('\n');
 
-  // 生成背景星點
+  // 生成背景星點（使用 seeded random 確保每次生成一致）
+  const bgRand = seededRandom('background-stars');
   const bgStars = Array.from({ length: 150 }, () => {
-    const x = Math.random() * CONFIG.width;
-    const y = Math.random() * CONFIG.height;
-    const r = Math.random() * 1.2 + 0.3;
-    const opacity = Math.random() * 0.6 + 0.2;
+    const x = bgRand() * CONFIG.width;
+    const y = bgRand() * CONFIG.height;
+    const r = bgRand() * 1.2 + 0.3;
+    const opacity = bgRand() * 0.6 + 0.2;
     return `<div class="bg-star" style="left: ${x.toFixed(1)}px; top: ${y.toFixed(1)}px; width: ${r * 2}px; height: ${r * 2}px; opacity: ${opacity.toFixed(2)};"></div>`;
   }).join('\n');
 
@@ -179,7 +181,7 @@ function generateHTML(stargazers) {
     body {
       width: ${CONFIG.width}px;
       height: ${CONFIG.height}px;
-      background: radial-gradient(ellipse at center, #1a1f35 0%, #0d1117 50%, #010409 100%);
+      background: radial-gradient(ellipse at center, ${CONFIG.bgGradient[1]} 0%, ${CONFIG.bgGradient[0]} 50%, ${CONFIG.bgGradient[2]} 100%);
       position: relative;
       overflow: hidden;
       font-family: system-ui, -apple-system, sans-serif;
