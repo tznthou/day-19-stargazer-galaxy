@@ -51,7 +51,7 @@ Action auto commits + pushes
 The image in README "appears" updated
 ```
 
-### Key Point: README Stays Same, SVG Changes
+### Key Point: README Stays Same, PNG Changes
 
 README.md always contains just this one line:
 
@@ -61,7 +61,7 @@ README.md always contains just this one line:
 
 This line of code never changes. But since the `assets/galaxy.png` file gets updated by the Action, when you refresh the page, the image content changes.
 
-**Think of it like a picture frame**: The frame (README) stays the same, but the photo inside (SVG) gets swapped.
+**Think of it like a picture frame**: The frame (README) stays the same, but the photo inside (PNG) gets swapped.
 
 ---
 
@@ -78,12 +78,12 @@ flowchart LR
     subgraph Action["GitHub Action"]
         Fetch["📡 Fetch API<br/>Get Stargazers"]
         Calc["📐 Calculate<br/>Golden Spiral"]
-        Gen["🎨 Generate<br/>SVG Vector"]
+        Gen["🎨 Generate<br/>PNG Image"]
         Commit["💾 Commit<br/>Push Update"]
     end
 
     subgraph Output["Output"]
-        SVG["galaxy.png<br/>(this changes)"]
+        PNG["galaxy.png<br/>(this changes)"]
         README["README.md<br/>(this stays same)"]
     end
 
@@ -91,7 +91,7 @@ flowchart LR
     Cron --> Fetch
     Manual --> Fetch
     Fetch --> Calc --> Gen --> Commit
-    Commit --> SVG --> README
+    Commit --> PNG --> README
 ```
 
 ---
@@ -132,8 +132,8 @@ Ensures the same person is always at the same position, even after regeneration.
 | GitHub Actions | Automation | watch + schedule + dispatch |
 | Node.js 20+ | Runtime | ES Modules |
 | GitHub API | Data Source | Stargazers endpoint |
-| SVG | Output Format | Vector, scalable |
-| Radial Gradient | Glow Effect | 5 color gradients |
+| Puppeteer | PNG Rendering | Headless Chrome screenshot |
+| HTML/CSS | Layout & Style | Radial gradient glow |
 
 ---
 
@@ -196,7 +196,7 @@ day-19-stargazer-galaxy/
 ├── scripts/
 │   └── generate-galaxy.js      # Core generation script
 ├── assets/
-│   └── galaxy.png              # Generated galaxy
+│   └── galaxy.png              # Generated galaxy image
 ├── package.json
 ├── README.md                   # Documentation (Chinese)
 └── README_EN.md                # Documentation (English)
@@ -299,9 +299,9 @@ We use it to arrange stargazers, hoping every supporter can be seen.
 
 ### For Vibe Coders
 
-The core of this project is just 200 lines of JavaScript. No framework, no build tools, no complex dependencies.
+This project uses Puppeteer to render PNG — because GitHub's SVG security restrictions block external images.
 
-If you want to modify it, just open the file. Want different colors? Change the array. Want different layout? Change the formula.
+But the core logic is still simple: one spiral formula, one color array, one seeded random. Want different colors? Change the array. Want different layout? Change the formula. Puppeteer just screenshots HTML to PNG.
 
 **Fork it. Break it. Make it yours.**
 

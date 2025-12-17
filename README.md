@@ -51,7 +51,7 @@ Action 自動 commit + push
 README 引用的圖片「看起來」更新了
 ```
 
-### 關鍵：README 不變，SVG 變
+### 關鍵：README 不變，PNG 變
 
 README.md 裡永遠只有這一行：
 
@@ -59,9 +59,9 @@ README.md 裡永遠只有這一行：
 ![Stargazer Galaxy](assets/galaxy.png)
 ```
 
-這行程式碼從頭到尾都不會改變。但因為 `assets/galaxy.svg` 這個檔案被 Action 更新了，所以當你重新整理頁面時，圖片內容就變了。
+這行程式碼從頭到尾都不會改變。但因為 `assets/galaxy.png` 這個檔案被 Action 更新了，所以當你重新整理頁面時，圖片內容就變了。
 
-**就像一個相框**：相框（README）不變，但裡面的照片（SVG）換了。
+**就像一個相框**：相框（README）不變，但裡面的照片（PNG）換了。
 
 ---
 
@@ -78,12 +78,12 @@ flowchart LR
     subgraph Action["GitHub Action"]
         Fetch["📡 Fetch API<br/>取得 Stargazers"]
         Calc["📐 Calculate<br/>黃金螺旋座標"]
-        Gen["🎨 Generate<br/>SVG 向量圖"]
+        Gen["🎨 Generate<br/>PNG 點陣圖"]
         Commit["💾 Commit<br/>推送更新"]
     end
 
     subgraph Output["輸出"]
-        SVG["galaxy.svg<br/>（這個會變）"]
+        PNG["galaxy.png<br/>（這個會變）"]
         README["README.md<br/>（這個不變）"]
     end
 
@@ -91,7 +91,7 @@ flowchart LR
     Cron --> Fetch
     Manual --> Fetch
     Fetch --> Calc --> Gen --> Commit
-    Commit --> SVG --> README
+    Commit --> PNG --> README
 ```
 
 ---
@@ -132,8 +132,8 @@ const offset = (rand() - 0.5) * 10;
 | GitHub Actions | 自動化觸發 | watch + schedule + dispatch |
 | Node.js 20+ | 執行環境 | ES Modules |
 | GitHub API | 資料來源 | Stargazers endpoint |
-| SVG | 輸出格式 | 向量圖、可縮放 |
-| Radial Gradient | 光暈效果 | 5 種顏色漸層 |
+| Puppeteer | PNG 渲染 | Headless Chrome 截圖 |
+| HTML/CSS | 排版樣式 | Radial gradient 光暈 |
 
 ---
 
@@ -196,7 +196,7 @@ day-19-stargazer-galaxy/
 ├── scripts/
 │   └── generate-galaxy.js      # 核心繪圖腳本
 ├── assets/
-│   └── galaxy.svg              # 生成的銀河圖
+│   └── galaxy.png              # 生成的銀河圖
 ├── package.json
 ├── README.md                   # 說明文件（中文）
 └── README_EN.md                # 說明文件（英文）
@@ -299,9 +299,9 @@ concurrency:
 
 ### 給 Vibe Coder 的話
 
-這個專案的核心只有 200 行 JavaScript。沒有 framework，沒有 build tool，沒有複雜的依賴。
+這個專案用了 Puppeteer 來渲染 PNG — 因為 GitHub 的 SVG 安全限制會擋住外部圖片。
 
-如果你想修改，打開檔案就能改。想換顏色？改陣列。想換排列方式？改公式。
+但核心邏輯還是很單純：一個螺旋公式、一組顏色陣列、一個 seeded random。想換顏色？改陣列。想換排列方式？改公式。Puppeteer 只是負責把 HTML 截圖成 PNG 而已。
 
 **Fork it. Break it. Make it yours.**
 
