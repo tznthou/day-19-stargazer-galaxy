@@ -52,156 +52,156 @@
 
   <!-- 背景星點 -->
   <g class="background-stars">
-    <circle cx="339.6" cy="118.2" r="0.5" fill="white" opacity="0.61" />
-<circle cx="13.0" cy="554.0" r="1.3" fill="white" opacity="0.28" />
-<circle cx="456.3" cy="222.5" r="0.6" fill="white" opacity="0.48" />
-<circle cx="453.0" cy="18.9" r="0.5" fill="white" opacity="0.55" />
-<circle cx="169.5" cy="422.7" r="0.7" fill="white" opacity="0.25" />
-<circle cx="665.9" cy="257.6" r="1.1" fill="white" opacity="0.43" />
-<circle cx="496.8" cy="142.4" r="0.5" fill="white" opacity="0.23" />
-<circle cx="549.6" cy="321.9" r="1.1" fill="white" opacity="0.69" />
-<circle cx="407.9" cy="306.6" r="1.3" fill="white" opacity="0.68" />
-<circle cx="98.1" cy="167.5" r="0.9" fill="white" opacity="0.42" />
-<circle cx="765.2" cy="69.8" r="0.6" fill="white" opacity="0.40" />
-<circle cx="120.7" cy="123.8" r="0.9" fill="white" opacity="0.42" />
-<circle cx="426.1" cy="571.6" r="0.3" fill="white" opacity="0.30" />
-<circle cx="334.5" cy="169.6" r="0.6" fill="white" opacity="0.48" />
-<circle cx="283.0" cy="115.7" r="0.7" fill="white" opacity="0.41" />
-<circle cx="238.7" cy="529.7" r="0.7" fill="white" opacity="0.77" />
-<circle cx="347.6" cy="247.1" r="0.8" fill="white" opacity="0.49" />
-<circle cx="692.0" cy="222.7" r="1.3" fill="white" opacity="0.32" />
-<circle cx="14.3" cy="560.2" r="0.9" fill="white" opacity="0.37" />
-<circle cx="50.2" cy="92.8" r="0.4" fill="white" opacity="0.24" />
-<circle cx="753.4" cy="213.6" r="1.3" fill="white" opacity="0.79" />
-<circle cx="125.8" cy="68.1" r="0.4" fill="white" opacity="0.40" />
-<circle cx="493.2" cy="85.9" r="0.6" fill="white" opacity="0.22" />
-<circle cx="330.1" cy="96.6" r="0.5" fill="white" opacity="0.67" />
-<circle cx="48.5" cy="235.1" r="0.8" fill="white" opacity="0.22" />
-<circle cx="567.5" cy="431.0" r="0.7" fill="white" opacity="0.32" />
-<circle cx="303.6" cy="119.9" r="0.9" fill="white" opacity="0.24" />
-<circle cx="258.9" cy="514.9" r="0.7" fill="white" opacity="0.31" />
-<circle cx="69.8" cy="494.5" r="1.4" fill="white" opacity="0.58" />
-<circle cx="675.9" cy="593.9" r="0.9" fill="white" opacity="0.42" />
-<circle cx="728.8" cy="48.4" r="1.3" fill="white" opacity="0.49" />
-<circle cx="640.6" cy="190.4" r="1.3" fill="white" opacity="0.35" />
-<circle cx="394.5" cy="159.3" r="0.5" fill="white" opacity="0.27" />
-<circle cx="118.7" cy="449.4" r="1.3" fill="white" opacity="0.25" />
-<circle cx="717.1" cy="299.2" r="0.9" fill="white" opacity="0.65" />
-<circle cx="59.0" cy="400.6" r="0.6" fill="white" opacity="0.61" />
-<circle cx="672.6" cy="225.4" r="0.8" fill="white" opacity="0.78" />
-<circle cx="42.2" cy="280.8" r="1.0" fill="white" opacity="0.23" />
-<circle cx="253.1" cy="245.2" r="0.8" fill="white" opacity="0.59" />
-<circle cx="385.7" cy="597.9" r="0.5" fill="white" opacity="0.40" />
-<circle cx="762.9" cy="540.0" r="1.2" fill="white" opacity="0.55" />
-<circle cx="108.0" cy="53.4" r="1.4" fill="white" opacity="0.44" />
-<circle cx="394.0" cy="186.2" r="0.3" fill="white" opacity="0.51" />
-<circle cx="266.5" cy="597.0" r="0.9" fill="white" opacity="0.50" />
-<circle cx="741.5" cy="433.2" r="1.0" fill="white" opacity="0.43" />
-<circle cx="429.1" cy="62.0" r="0.4" fill="white" opacity="0.71" />
-<circle cx="512.7" cy="262.1" r="0.8" fill="white" opacity="0.41" />
-<circle cx="150.4" cy="162.7" r="1.1" fill="white" opacity="0.53" />
-<circle cx="482.9" cy="47.1" r="0.4" fill="white" opacity="0.59" />
-<circle cx="328.5" cy="591.9" r="1.4" fill="white" opacity="0.48" />
-<circle cx="574.3" cy="313.8" r="1.2" fill="white" opacity="0.79" />
-<circle cx="559.8" cy="485.9" r="0.5" fill="white" opacity="0.79" />
-<circle cx="758.0" cy="81.1" r="0.9" fill="white" opacity="0.61" />
-<circle cx="387.3" cy="586.5" r="0.5" fill="white" opacity="0.22" />
-<circle cx="281.5" cy="125.5" r="1.0" fill="white" opacity="0.66" />
-<circle cx="156.6" cy="56.1" r="0.9" fill="white" opacity="0.35" />
-<circle cx="666.3" cy="74.2" r="0.7" fill="white" opacity="0.25" />
-<circle cx="152.8" cy="108.1" r="1.0" fill="white" opacity="0.47" />
-<circle cx="673.5" cy="197.8" r="0.8" fill="white" opacity="0.24" />
-<circle cx="433.2" cy="172.3" r="1.3" fill="white" opacity="0.40" />
-<circle cx="556.7" cy="359.6" r="0.6" fill="white" opacity="0.26" />
-<circle cx="369.0" cy="240.3" r="0.6" fill="white" opacity="0.68" />
-<circle cx="406.5" cy="84.1" r="0.3" fill="white" opacity="0.65" />
-<circle cx="730.9" cy="491.4" r="0.8" fill="white" opacity="0.41" />
-<circle cx="744.5" cy="451.5" r="1.2" fill="white" opacity="0.34" />
-<circle cx="468.4" cy="336.6" r="1.5" fill="white" opacity="0.29" />
-<circle cx="714.5" cy="427.4" r="1.2" fill="white" opacity="0.68" />
-<circle cx="70.0" cy="521.5" r="1.0" fill="white" opacity="0.38" />
-<circle cx="140.6" cy="473.8" r="1.3" fill="white" opacity="0.54" />
-<circle cx="713.0" cy="64.8" r="1.0" fill="white" opacity="0.25" />
-<circle cx="718.9" cy="410.2" r="0.7" fill="white" opacity="0.39" />
-<circle cx="155.7" cy="88.3" r="0.8" fill="white" opacity="0.24" />
-<circle cx="608.8" cy="588.4" r="0.9" fill="white" opacity="0.68" />
-<circle cx="711.3" cy="355.6" r="0.5" fill="white" opacity="0.55" />
-<circle cx="652.4" cy="281.6" r="1.3" fill="white" opacity="0.64" />
-<circle cx="414.1" cy="283.6" r="1.0" fill="white" opacity="0.40" />
-<circle cx="300.8" cy="93.2" r="1.2" fill="white" opacity="0.38" />
-<circle cx="207.0" cy="587.8" r="1.4" fill="white" opacity="0.72" />
-<circle cx="610.4" cy="75.7" r="1.3" fill="white" opacity="0.43" />
-<circle cx="351.0" cy="255.0" r="1.2" fill="white" opacity="0.66" />
-<circle cx="13.2" cy="439.3" r="1.5" fill="white" opacity="0.79" />
-<circle cx="734.7" cy="399.0" r="1.0" fill="white" opacity="0.32" />
-<circle cx="644.4" cy="230.9" r="0.9" fill="white" opacity="0.77" />
-<circle cx="130.9" cy="404.7" r="1.1" fill="white" opacity="0.78" />
-<circle cx="20.9" cy="571.7" r="1.5" fill="white" opacity="0.50" />
-<circle cx="522.4" cy="271.5" r="0.5" fill="white" opacity="0.23" />
-<circle cx="9.4" cy="358.3" r="1.2" fill="white" opacity="0.68" />
-<circle cx="488.4" cy="450.2" r="0.4" fill="white" opacity="0.39" />
-<circle cx="66.5" cy="130.9" r="0.6" fill="white" opacity="0.76" />
-<circle cx="206.2" cy="361.9" r="0.4" fill="white" opacity="0.27" />
-<circle cx="229.8" cy="513.4" r="1.1" fill="white" opacity="0.53" />
-<circle cx="344.6" cy="153.2" r="0.7" fill="white" opacity="0.64" />
-<circle cx="441.7" cy="459.1" r="1.2" fill="white" opacity="0.23" />
-<circle cx="215.1" cy="407.6" r="0.4" fill="white" opacity="0.44" />
-<circle cx="594.9" cy="438.7" r="1.4" fill="white" opacity="0.70" />
-<circle cx="654.6" cy="589.7" r="1.2" fill="white" opacity="0.71" />
-<circle cx="673.3" cy="225.5" r="0.5" fill="white" opacity="0.39" />
-<circle cx="344.3" cy="410.1" r="1.1" fill="white" opacity="0.39" />
-<circle cx="99.0" cy="371.0" r="0.8" fill="white" opacity="0.27" />
-<circle cx="418.5" cy="463.0" r="0.8" fill="white" opacity="0.51" />
-<circle cx="693.4" cy="556.5" r="0.5" fill="white" opacity="0.30" />
-<circle cx="268.6" cy="23.8" r="0.6" fill="white" opacity="0.48" />
-<circle cx="484.5" cy="558.0" r="0.6" fill="white" opacity="0.45" />
-<circle cx="548.9" cy="256.3" r="0.7" fill="white" opacity="0.30" />
-<circle cx="641.3" cy="552.4" r="0.4" fill="white" opacity="0.26" />
-<circle cx="781.1" cy="2.3" r="0.6" fill="white" opacity="0.26" />
-<circle cx="221.6" cy="84.3" r="0.6" fill="white" opacity="0.21" />
-<circle cx="318.2" cy="382.2" r="1.4" fill="white" opacity="0.73" />
-<circle cx="745.9" cy="220.0" r="0.9" fill="white" opacity="0.65" />
-<circle cx="770.9" cy="289.9" r="0.7" fill="white" opacity="0.67" />
-<circle cx="485.8" cy="334.2" r="0.6" fill="white" opacity="0.53" />
-<circle cx="711.4" cy="524.4" r="1.3" fill="white" opacity="0.42" />
-<circle cx="738.0" cy="52.9" r="0.4" fill="white" opacity="0.36" />
-<circle cx="103.2" cy="106.9" r="1.1" fill="white" opacity="0.72" />
-<circle cx="763.9" cy="422.7" r="0.9" fill="white" opacity="0.26" />
-<circle cx="329.7" cy="249.7" r="0.6" fill="white" opacity="0.22" />
-<circle cx="738.6" cy="397.4" r="0.7" fill="white" opacity="0.27" />
-<circle cx="269.7" cy="279.8" r="1.2" fill="white" opacity="0.59" />
-<circle cx="767.1" cy="400.4" r="0.9" fill="white" opacity="0.67" />
-<circle cx="206.9" cy="129.9" r="0.7" fill="white" opacity="0.79" />
-<circle cx="64.1" cy="248.0" r="0.4" fill="white" opacity="0.76" />
-<circle cx="674.8" cy="245.6" r="1.0" fill="white" opacity="0.61" />
-<circle cx="17.5" cy="285.4" r="0.9" fill="white" opacity="0.32" />
-<circle cx="451.0" cy="331.0" r="0.6" fill="white" opacity="0.47" />
-<circle cx="734.9" cy="24.5" r="0.4" fill="white" opacity="0.26" />
-<circle cx="728.0" cy="101.4" r="0.3" fill="white" opacity="0.61" />
-<circle cx="94.5" cy="311.4" r="1.0" fill="white" opacity="0.23" />
-<circle cx="709.3" cy="434.0" r="0.9" fill="white" opacity="0.23" />
-<circle cx="269.9" cy="356.2" r="0.8" fill="white" opacity="0.46" />
-<circle cx="514.0" cy="239.4" r="0.4" fill="white" opacity="0.77" />
-<circle cx="717.0" cy="57.7" r="0.5" fill="white" opacity="0.74" />
-<circle cx="727.4" cy="246.3" r="1.0" fill="white" opacity="0.71" />
-<circle cx="94.5" cy="201.8" r="1.3" fill="white" opacity="0.40" />
-<circle cx="230.2" cy="279.0" r="0.6" fill="white" opacity="0.57" />
-<circle cx="564.4" cy="249.0" r="0.8" fill="white" opacity="0.58" />
-<circle cx="234.1" cy="413.6" r="0.9" fill="white" opacity="0.62" />
-<circle cx="45.8" cy="521.9" r="0.6" fill="white" opacity="0.37" />
-<circle cx="733.4" cy="179.4" r="0.8" fill="white" opacity="0.74" />
-<circle cx="390.2" cy="110.3" r="0.5" fill="white" opacity="0.36" />
-<circle cx="60.3" cy="449.4" r="0.5" fill="white" opacity="0.59" />
-<circle cx="255.3" cy="553.7" r="0.3" fill="white" opacity="0.53" />
-<circle cx="177.1" cy="186.3" r="0.9" fill="white" opacity="0.68" />
-<circle cx="254.6" cy="599.0" r="1.2" fill="white" opacity="0.59" />
-<circle cx="141.2" cy="334.2" r="1.0" fill="white" opacity="0.49" />
-<circle cx="495.2" cy="260.1" r="0.5" fill="white" opacity="0.69" />
-<circle cx="417.5" cy="462.3" r="1.3" fill="white" opacity="0.57" />
-<circle cx="238.7" cy="488.6" r="1.5" fill="white" opacity="0.72" />
-<circle cx="160.5" cy="517.3" r="0.9" fill="white" opacity="0.42" />
-<circle cx="580.3" cy="304.8" r="1.0" fill="white" opacity="0.79" />
-<circle cx="313.3" cy="83.2" r="1.0" fill="white" opacity="0.48" />
+    <circle cx="292.7" cy="505.1" r="0.4" fill="white" opacity="0.47" />
+<circle cx="94.6" cy="82.7" r="0.9" fill="white" opacity="0.73" />
+<circle cx="668.2" cy="376.9" r="0.7" fill="white" opacity="0.21" />
+<circle cx="377.0" cy="482.2" r="0.5" fill="white" opacity="0.28" />
+<circle cx="114.8" cy="45.7" r="1.2" fill="white" opacity="0.65" />
+<circle cx="722.8" cy="273.2" r="0.8" fill="white" opacity="0.41" />
+<circle cx="548.5" cy="147.9" r="0.4" fill="white" opacity="0.80" />
+<circle cx="549.9" cy="246.5" r="0.3" fill="white" opacity="0.55" />
+<circle cx="530.6" cy="417.7" r="1.4" fill="white" opacity="0.44" />
+<circle cx="613.5" cy="561.0" r="0.5" fill="white" opacity="0.57" />
+<circle cx="131.5" cy="564.0" r="0.4" fill="white" opacity="0.62" />
+<circle cx="87.8" cy="380.5" r="0.7" fill="white" opacity="0.24" />
+<circle cx="128.3" cy="343.5" r="1.3" fill="white" opacity="0.25" />
+<circle cx="159.8" cy="148.0" r="0.8" fill="white" opacity="0.61" />
+<circle cx="657.1" cy="210.9" r="0.4" fill="white" opacity="0.24" />
+<circle cx="351.5" cy="141.8" r="0.4" fill="white" opacity="0.27" />
+<circle cx="531.4" cy="117.9" r="0.3" fill="white" opacity="0.34" />
+<circle cx="132.6" cy="276.6" r="0.7" fill="white" opacity="0.69" />
+<circle cx="676.2" cy="14.3" r="1.2" fill="white" opacity="0.51" />
+<circle cx="698.3" cy="417.0" r="1.0" fill="white" opacity="0.33" />
+<circle cx="423.1" cy="422.2" r="0.7" fill="white" opacity="0.58" />
+<circle cx="542.2" cy="484.2" r="0.9" fill="white" opacity="0.58" />
+<circle cx="365.3" cy="319.2" r="1.0" fill="white" opacity="0.68" />
+<circle cx="610.0" cy="156.5" r="0.6" fill="white" opacity="0.21" />
+<circle cx="411.7" cy="328.1" r="1.0" fill="white" opacity="0.75" />
+<circle cx="508.3" cy="133.1" r="1.1" fill="white" opacity="0.60" />
+<circle cx="753.4" cy="413.4" r="0.6" fill="white" opacity="0.74" />
+<circle cx="112.3" cy="157.0" r="0.3" fill="white" opacity="0.65" />
+<circle cx="203.0" cy="467.2" r="0.9" fill="white" opacity="0.74" />
+<circle cx="549.0" cy="543.8" r="1.0" fill="white" opacity="0.23" />
+<circle cx="496.0" cy="98.2" r="1.2" fill="white" opacity="0.54" />
+<circle cx="35.3" cy="84.8" r="0.3" fill="white" opacity="0.71" />
+<circle cx="198.4" cy="133.4" r="0.4" fill="white" opacity="0.39" />
+<circle cx="360.4" cy="398.6" r="0.6" fill="white" opacity="0.58" />
+<circle cx="155.8" cy="107.7" r="0.6" fill="white" opacity="0.78" />
+<circle cx="779.3" cy="13.4" r="0.4" fill="white" opacity="0.48" />
+<circle cx="44.2" cy="425.4" r="0.7" fill="white" opacity="0.41" />
+<circle cx="56.4" cy="258.6" r="0.7" fill="white" opacity="0.68" />
+<circle cx="493.1" cy="267.0" r="1.2" fill="white" opacity="0.55" />
+<circle cx="245.3" cy="178.3" r="0.3" fill="white" opacity="0.25" />
+<circle cx="725.5" cy="371.3" r="0.7" fill="white" opacity="0.21" />
+<circle cx="281.7" cy="119.0" r="0.7" fill="white" opacity="0.75" />
+<circle cx="427.7" cy="423.6" r="0.8" fill="white" opacity="0.67" />
+<circle cx="210.0" cy="469.6" r="0.8" fill="white" opacity="0.32" />
+<circle cx="242.5" cy="527.4" r="1.2" fill="white" opacity="0.79" />
+<circle cx="533.1" cy="572.4" r="1.0" fill="white" opacity="0.62" />
+<circle cx="142.8" cy="343.3" r="1.0" fill="white" opacity="0.74" />
+<circle cx="112.8" cy="85.5" r="1.4" fill="white" opacity="0.41" />
+<circle cx="752.1" cy="340.8" r="1.0" fill="white" opacity="0.51" />
+<circle cx="368.8" cy="437.8" r="0.5" fill="white" opacity="0.50" />
+<circle cx="17.7" cy="94.8" r="0.8" fill="white" opacity="0.31" />
+<circle cx="657.3" cy="515.1" r="0.9" fill="white" opacity="0.47" />
+<circle cx="339.6" cy="399.1" r="1.0" fill="white" opacity="0.71" />
+<circle cx="25.2" cy="249.1" r="0.4" fill="white" opacity="0.55" />
+<circle cx="99.0" cy="233.8" r="1.5" fill="white" opacity="0.34" />
+<circle cx="59.6" cy="219.7" r="0.8" fill="white" opacity="0.62" />
+<circle cx="57.6" cy="439.4" r="0.3" fill="white" opacity="0.37" />
+<circle cx="755.7" cy="478.6" r="0.3" fill="white" opacity="0.58" />
+<circle cx="96.8" cy="408.7" r="1.3" fill="white" opacity="0.60" />
+<circle cx="318.3" cy="187.8" r="0.9" fill="white" opacity="0.26" />
+<circle cx="42.2" cy="297.9" r="1.3" fill="white" opacity="0.49" />
+<circle cx="169.0" cy="536.4" r="1.5" fill="white" opacity="0.32" />
+<circle cx="702.3" cy="375.1" r="0.9" fill="white" opacity="0.30" />
+<circle cx="636.0" cy="355.1" r="0.6" fill="white" opacity="0.35" />
+<circle cx="86.1" cy="111.2" r="1.1" fill="white" opacity="0.71" />
+<circle cx="743.4" cy="236.4" r="0.6" fill="white" opacity="0.50" />
+<circle cx="577.3" cy="308.7" r="0.4" fill="white" opacity="0.42" />
+<circle cx="353.7" cy="157.6" r="1.2" fill="white" opacity="0.21" />
+<circle cx="211.2" cy="294.5" r="1.2" fill="white" opacity="0.55" />
+<circle cx="664.4" cy="527.1" r="1.0" fill="white" opacity="0.66" />
+<circle cx="173.0" cy="165.4" r="1.2" fill="white" opacity="0.35" />
+<circle cx="655.3" cy="154.4" r="0.3" fill="white" opacity="0.22" />
+<circle cx="264.6" cy="567.7" r="1.4" fill="white" opacity="0.21" />
+<circle cx="486.6" cy="449.2" r="0.3" fill="white" opacity="0.57" />
+<circle cx="210.1" cy="570.6" r="0.4" fill="white" opacity="0.46" />
+<circle cx="475.7" cy="127.5" r="1.0" fill="white" opacity="0.79" />
+<circle cx="334.2" cy="488.7" r="0.8" fill="white" opacity="0.53" />
+<circle cx="470.0" cy="291.2" r="1.5" fill="white" opacity="0.67" />
+<circle cx="678.4" cy="286.7" r="0.7" fill="white" opacity="0.26" />
+<circle cx="679.3" cy="503.8" r="1.0" fill="white" opacity="0.47" />
+<circle cx="141.6" cy="101.8" r="1.3" fill="white" opacity="0.59" />
+<circle cx="157.2" cy="352.8" r="1.5" fill="white" opacity="0.54" />
+<circle cx="577.9" cy="468.0" r="0.7" fill="white" opacity="0.54" />
+<circle cx="68.2" cy="598.3" r="1.3" fill="white" opacity="0.74" />
+<circle cx="476.0" cy="293.9" r="1.4" fill="white" opacity="0.22" />
+<circle cx="480.6" cy="587.3" r="0.5" fill="white" opacity="0.20" />
+<circle cx="329.4" cy="8.0" r="1.3" fill="white" opacity="0.76" />
+<circle cx="754.4" cy="558.1" r="1.3" fill="white" opacity="0.79" />
+<circle cx="133.8" cy="117.5" r="1.0" fill="white" opacity="0.63" />
+<circle cx="184.1" cy="58.4" r="0.4" fill="white" opacity="0.59" />
+<circle cx="420.8" cy="117.4" r="1.4" fill="white" opacity="0.58" />
+<circle cx="571.7" cy="543.6" r="0.5" fill="white" opacity="0.51" />
+<circle cx="649.0" cy="111.7" r="0.7" fill="white" opacity="0.69" />
+<circle cx="348.1" cy="262.9" r="1.4" fill="white" opacity="0.64" />
+<circle cx="613.4" cy="253.2" r="0.8" fill="white" opacity="0.68" />
+<circle cx="207.0" cy="34.7" r="1.4" fill="white" opacity="0.73" />
+<circle cx="747.8" cy="1.3" r="1.3" fill="white" opacity="0.43" />
+<circle cx="723.3" cy="305.7" r="1.0" fill="white" opacity="0.60" />
+<circle cx="596.8" cy="298.5" r="0.5" fill="white" opacity="0.25" />
+<circle cx="48.6" cy="481.9" r="0.8" fill="white" opacity="0.20" />
+<circle cx="119.3" cy="148.1" r="1.4" fill="white" opacity="0.55" />
+<circle cx="359.8" cy="100.6" r="0.4" fill="white" opacity="0.37" />
+<circle cx="715.7" cy="496.8" r="1.1" fill="white" opacity="0.40" />
+<circle cx="573.4" cy="15.1" r="0.8" fill="white" opacity="0.57" />
+<circle cx="550.6" cy="259.5" r="1.0" fill="white" opacity="0.36" />
+<circle cx="354.6" cy="158.3" r="0.7" fill="white" opacity="0.73" />
+<circle cx="488.5" cy="599.2" r="1.5" fill="white" opacity="0.40" />
+<circle cx="233.9" cy="303.5" r="0.7" fill="white" opacity="0.38" />
+<circle cx="296.1" cy="91.6" r="0.6" fill="white" opacity="0.47" />
+<circle cx="18.7" cy="341.2" r="0.7" fill="white" opacity="0.21" />
+<circle cx="712.3" cy="126.4" r="1.4" fill="white" opacity="0.76" />
+<circle cx="788.5" cy="446.8" r="1.4" fill="white" opacity="0.74" />
+<circle cx="39.3" cy="24.0" r="0.9" fill="white" opacity="0.26" />
+<circle cx="429.9" cy="89.7" r="1.4" fill="white" opacity="0.64" />
+<circle cx="150.9" cy="120.9" r="0.9" fill="white" opacity="0.66" />
+<circle cx="306.8" cy="203.2" r="0.7" fill="white" opacity="0.55" />
+<circle cx="330.2" cy="311.6" r="0.6" fill="white" opacity="0.44" />
+<circle cx="369.2" cy="499.0" r="1.2" fill="white" opacity="0.41" />
+<circle cx="233.0" cy="2.1" r="1.0" fill="white" opacity="0.52" />
+<circle cx="82.8" cy="510.2" r="0.9" fill="white" opacity="0.43" />
+<circle cx="392.4" cy="248.4" r="1.5" fill="white" opacity="0.24" />
+<circle cx="363.7" cy="580.8" r="1.1" fill="white" opacity="0.27" />
+<circle cx="475.4" cy="53.4" r="1.2" fill="white" opacity="0.43" />
+<circle cx="729.0" cy="154.7" r="0.5" fill="white" opacity="0.58" />
+<circle cx="515.4" cy="453.2" r="0.5" fill="white" opacity="0.76" />
+<circle cx="118.9" cy="302.4" r="0.6" fill="white" opacity="0.63" />
+<circle cx="445.2" cy="184.3" r="1.4" fill="white" opacity="0.60" />
+<circle cx="402.1" cy="569.8" r="0.4" fill="white" opacity="0.41" />
+<circle cx="80.0" cy="582.3" r="0.9" fill="white" opacity="0.35" />
+<circle cx="422.2" cy="86.0" r="0.5" fill="white" opacity="0.68" />
+<circle cx="423.3" cy="461.9" r="0.5" fill="white" opacity="0.42" />
+<circle cx="281.7" cy="50.1" r="0.6" fill="white" opacity="0.65" />
+<circle cx="412.0" cy="144.2" r="0.7" fill="white" opacity="0.57" />
+<circle cx="799.4" cy="253.6" r="1.2" fill="white" opacity="0.76" />
+<circle cx="552.9" cy="95.8" r="1.4" fill="white" opacity="0.31" />
+<circle cx="401.7" cy="439.0" r="1.5" fill="white" opacity="0.64" />
+<circle cx="572.2" cy="68.3" r="0.8" fill="white" opacity="0.40" />
+<circle cx="711.7" cy="448.6" r="0.8" fill="white" opacity="0.75" />
+<circle cx="137.3" cy="213.6" r="1.4" fill="white" opacity="0.53" />
+<circle cx="621.2" cy="271.2" r="1.4" fill="white" opacity="0.49" />
+<circle cx="188.4" cy="432.3" r="1.4" fill="white" opacity="0.39" />
+<circle cx="6.8" cy="346.3" r="1.5" fill="white" opacity="0.78" />
+<circle cx="118.1" cy="478.9" r="0.9" fill="white" opacity="0.59" />
+<circle cx="609.4" cy="311.4" r="0.9" fill="white" opacity="0.26" />
+<circle cx="151.3" cy="447.6" r="1.1" fill="white" opacity="0.53" />
+<circle cx="538.2" cy="346.7" r="0.4" fill="white" opacity="0.38" />
+<circle cx="658.7" cy="179.4" r="1.1" fill="white" opacity="0.27" />
+<circle cx="306.7" cy="64.0" r="0.3" fill="white" opacity="0.71" />
+<circle cx="480.8" cy="301.1" r="0.6" fill="white" opacity="0.46" />
+<circle cx="147.4" cy="113.4" r="1.1" fill="white" opacity="0.55" />
   </g>
 
   <!-- 中心光暈 -->
@@ -243,657 +243,11 @@
         opacity="0.8"
       />
     </g>
-
-    <g class="star" data-user="torvalds">
-      <!-- 光暈 -->
-      <circle
-        cx="406.6369363901536"
-        cy="270.76502053503935"
-        r="20"
-        fill="url(#glow-3)"
-        opacity="0.6"
-      />
-      <!-- 頭像 -->
-      <clipPath id="clip-torvalds">
-        <circle cx="406.6369363901536" cy="270.76502053503935" r="14" />
-      </clipPath>
-      <image
-        href="https://github.com/torvalds.png?s=56"
-        x="392.6369363901536"
-        y="256.76502053503935"
-        width="28"
-        height="28"
-        clip-path="url(#clip-torvalds)"
-        preserveAspectRatio="xMidYMid slice"
-      />
-      <!-- 邊框 -->
-      <circle
-        cx="406.6369363901536"
-        cy="270.76502053503935"
-        r="14"
-        fill="none"
-        stroke="#7ee787"
-        stroke-width="1.5"
-        opacity="0.8"
-      />
-    </g>
-
-    <g class="star" data-user="gaearon">
-      <!-- 光暈 -->
-      <circle
-        cx="418.8844809186065"
-        cy="318.39913729427036"
-        r="20"
-        fill="url(#glow-2)"
-        opacity="0.6"
-      />
-      <!-- 頭像 -->
-      <clipPath id="clip-gaearon">
-        <circle cx="418.8844809186065" cy="318.39913729427036" r="14" />
-      </clipPath>
-      <image
-        href="https://github.com/gaearon.png?s=56"
-        x="404.8844809186065"
-        y="304.39913729427036"
-        width="28"
-        height="28"
-        clip-path="url(#clip-gaearon)"
-        preserveAspectRatio="xMidYMid slice"
-      />
-      <!-- 邊框 -->
-      <circle
-        cx="418.8844809186065"
-        cy="318.39913729427036"
-        r="14"
-        fill="none"
-        stroke="#f778ba"
-        stroke-width="1.5"
-        opacity="0.8"
-      />
-    </g>
-
-    <g class="star" data-user="sindresorhus">
-      <!-- 光暈 -->
-      <circle
-        cx="366.00397927264"
-        cy="295.80771460296455"
-        r="20"
-        fill="url(#glow-2)"
-        opacity="0.6"
-      />
-      <!-- 頭像 -->
-      <clipPath id="clip-sindresorhus">
-        <circle cx="366.00397927264" cy="295.80771460296455" r="14" />
-      </clipPath>
-      <image
-        href="https://github.com/sindresorhus.png?s=56"
-        x="352.00397927264"
-        y="281.80771460296455"
-        width="28"
-        height="28"
-        clip-path="url(#clip-sindresorhus)"
-        preserveAspectRatio="xMidYMid slice"
-      />
-      <!-- 邊框 -->
-      <circle
-        cx="366.00397927264"
-        cy="295.80771460296455"
-        r="14"
-        fill="none"
-        stroke="#f778ba"
-        stroke-width="1.5"
-        opacity="0.8"
-      />
-    </g>
-
-    <g class="star" data-user="tj">
-      <!-- 光暈 -->
-      <circle
-        cx="436.97941831452033"
-        cy="279.51764084692024"
-        r="20"
-        fill="url(#glow-2)"
-        opacity="0.6"
-      />
-      <!-- 頭像 -->
-      <clipPath id="clip-tj">
-        <circle cx="436.97941831452033" cy="279.51764084692024" r="14" />
-      </clipPath>
-      <image
-        href="https://github.com/tj.png?s=56"
-        x="422.97941831452033"
-        y="265.51764084692024"
-        width="28"
-        height="28"
-        clip-path="url(#clip-tj)"
-        preserveAspectRatio="xMidYMid slice"
-      />
-      <!-- 邊框 -->
-      <circle
-        cx="436.97941831452033"
-        cy="279.51764084692024"
-        r="14"
-        fill="none"
-        stroke="#f778ba"
-        stroke-width="1.5"
-        opacity="0.8"
-      />
-    </g>
-
-    <g class="star" data-user="yyx990803">
-      <!-- 光暈 -->
-      <circle
-        cx="391.979733980234"
-        cy="340.99858105854423"
-        r="20"
-        fill="url(#glow-4)"
-        opacity="0.6"
-      />
-      <!-- 頭像 -->
-      <clipPath id="clip-yyx990803">
-        <circle cx="391.979733980234" cy="340.99858105854423" r="14" />
-      </clipPath>
-      <image
-        href="https://github.com/yyx990803.png?s=56"
-        x="377.979733980234"
-        y="326.99858105854423"
-        width="28"
-        height="28"
-        clip-path="url(#clip-yyx990803)"
-        preserveAspectRatio="xMidYMid slice"
-      />
-      <!-- 邊框 -->
-      <circle
-        cx="391.979733980234"
-        cy="340.99858105854423"
-        r="14"
-        fill="none"
-        stroke="#ffa657"
-        stroke-width="1.5"
-        opacity="0.8"
-      />
-    </g>
-
-    <g class="star" data-user="addyosmani">
-      <!-- 光暈 -->
-      <circle
-        cx="380.12806621268834"
-        cy="254.17119716909534"
-        r="20"
-        fill="url(#glow-0)"
-        opacity="0.6"
-      />
-      <!-- 頭像 -->
-      <clipPath id="clip-addyosmani">
-        <circle cx="380.12806621268834" cy="254.17119716909534" r="14" />
-      </clipPath>
-      <image
-        href="https://github.com/addyosmani.png?s=56"
-        x="366.12806621268834"
-        y="240.17119716909534"
-        width="28"
-        height="28"
-        clip-path="url(#clip-addyosmani)"
-        preserveAspectRatio="xMidYMid slice"
-      />
-      <!-- 邊框 -->
-      <circle
-        cx="380.12806621268834"
-        cy="254.17119716909534"
-        r="14"
-        fill="none"
-        stroke="#58a6ff"
-        stroke-width="1.5"
-        opacity="0.8"
-      />
-    </g>
-
-    <g class="star" data-user="paulirish">
-      <!-- 光暈 -->
-      <circle
-        cx="448.7352990316838"
-        cy="322.6550640550046"
-        r="20"
-        fill="url(#glow-4)"
-        opacity="0.6"
-      />
-      <!-- 頭像 -->
-      <clipPath id="clip-paulirish">
-        <circle cx="448.7352990316838" cy="322.6550640550046" r="14" />
-      </clipPath>
-      <image
-        href="https://github.com/paulirish.png?s=56"
-        x="434.7352990316838"
-        y="308.6550640550046"
-        width="28"
-        height="28"
-        clip-path="url(#clip-paulirish)"
-        preserveAspectRatio="xMidYMid slice"
-      />
-      <!-- 邊框 -->
-      <circle
-        cx="448.7352990316838"
-        cy="322.6550640550046"
-        r="14"
-        fill="none"
-        stroke="#ffa657"
-        stroke-width="1.5"
-        opacity="0.8"
-      />
-    </g>
-
-    <g class="star" data-user="fat">
-      <!-- 光暈 -->
-      <circle
-        cx="351.2803822147429"
-        cy="321.4407587508106"
-        r="20"
-        fill="url(#glow-3)"
-        opacity="0.6"
-      />
-      <!-- 頭像 -->
-      <clipPath id="clip-fat">
-        <circle cx="351.2803822147429" cy="321.4407587508106" r="14" />
-      </clipPath>
-      <image
-        href="https://github.com/fat.png?s=56"
-        x="337.2803822147429"
-        y="307.4407587508106"
-        width="28"
-        height="28"
-        clip-path="url(#clip-fat)"
-        preserveAspectRatio="xMidYMid slice"
-      />
-      <!-- 邊框 -->
-      <circle
-        cx="351.2803822147429"
-        cy="321.4407587508106"
-        r="14"
-        fill="none"
-        stroke="#7ee787"
-        stroke-width="1.5"
-        opacity="0.8"
-      />
-    </g>
-
-    <g class="star" data-user="mdo">
-      <!-- 光暈 -->
-      <circle
-        cx="433.4290484180838"
-        cy="248.39125761358525"
-        r="20"
-        fill="url(#glow-3)"
-        opacity="0.6"
-      />
-      <!-- 頭像 -->
-      <clipPath id="clip-mdo">
-        <circle cx="433.4290484180838" cy="248.39125761358525" r="14" />
-      </clipPath>
-      <image
-        href="https://github.com/mdo.png?s=56"
-        x="419.4290484180838"
-        y="234.39125761358525"
-        width="28"
-        height="28"
-        clip-path="url(#clip-mdo)"
-        preserveAspectRatio="xMidYMid slice"
-      />
-      <!-- 邊框 -->
-      <circle
-        cx="433.4290484180838"
-        cy="248.39125761358525"
-        r="14"
-        fill="none"
-        stroke="#7ee787"
-        stroke-width="1.5"
-        opacity="0.8"
-      />
-    </g>
-
-    <g class="star" data-user="defunkt">
-      <!-- 光暈 -->
-      <circle
-        cx="423.2665378671783"
-        cy="350.2499098800474"
-        r="20"
-        fill="url(#glow-2)"
-        opacity="0.6"
-      />
-      <!-- 頭像 -->
-      <clipPath id="clip-defunkt">
-        <circle cx="423.2665378671783" cy="350.2499098800474" r="14" />
-      </clipPath>
-      <image
-        href="https://github.com/defunkt.png?s=56"
-        x="409.2665378671783"
-        y="336.2499098800474"
-        width="28"
-        height="28"
-        clip-path="url(#clip-defunkt)"
-        preserveAspectRatio="xMidYMid slice"
-      />
-      <!-- 邊框 -->
-      <circle
-        cx="423.2665378671783"
-        cy="350.2499098800474"
-        r="14"
-        fill="none"
-        stroke="#f778ba"
-        stroke-width="1.5"
-        opacity="0.8"
-      />
-    </g>
-
-    <g class="star" data-user="mojombo">
-      <!-- 光暈 -->
-      <circle
-        cx="346.4231634534494"
-        cy="263.8639259027073"
-        r="20"
-        fill="url(#glow-2)"
-        opacity="0.6"
-      />
-      <!-- 頭像 -->
-      <clipPath id="clip-mojombo">
-        <circle cx="346.4231634534494" cy="263.8639259027073" r="14" />
-      </clipPath>
-      <image
-        href="https://github.com/mojombo.png?s=56"
-        x="332.4231634534494"
-        y="249.8639259027073"
-        width="28"
-        height="28"
-        clip-path="url(#clip-mojombo)"
-        preserveAspectRatio="xMidYMid slice"
-      />
-      <!-- 邊框 -->
-      <circle
-        cx="346.4231634534494"
-        cy="263.8639259027073"
-        r="14"
-        fill="none"
-        stroke="#f778ba"
-        stroke-width="1.5"
-        opacity="0.8"
-      />
-    </g>
-
-    <g class="star" data-user="pjhyett">
-      <!-- 光暈 -->
-      <circle
-        cx="467.6761500614599"
-        cy="291.93018419424624"
-        r="20"
-        fill="url(#glow-2)"
-        opacity="0.6"
-      />
-      <!-- 頭像 -->
-      <clipPath id="clip-pjhyett">
-        <circle cx="467.6761500614599" cy="291.93018419424624" r="14" />
-      </clipPath>
-      <image
-        href="https://github.com/pjhyett.png?s=56"
-        x="453.6761500614599"
-        y="277.93018419424624"
-        width="28"
-        height="28"
-        clip-path="url(#clip-pjhyett)"
-        preserveAspectRatio="xMidYMid slice"
-      />
-      <!-- 邊框 -->
-      <circle
-        cx="467.6761500614599"
-        cy="291.93018419424624"
-        r="14"
-        fill="none"
-        stroke="#f778ba"
-        stroke-width="1.5"
-        opacity="0.8"
-      />
-    </g>
-
-    <g class="star" data-user="wycats">
-      <!-- 光暈 -->
-      <circle
-        cx="354.5073552943281"
-        cy="353.6730419835148"
-        r="20"
-        fill="url(#glow-1)"
-        opacity="0.6"
-      />
-      <!-- 頭像 -->
-      <clipPath id="clip-wycats">
-        <circle cx="354.5073552943281" cy="353.6730419835148" r="14" />
-      </clipPath>
-      <image
-        href="https://github.com/wycats.png?s=56"
-        x="340.5073552943281"
-        y="339.6730419835148"
-        width="28"
-        height="28"
-        clip-path="url(#clip-wycats)"
-        preserveAspectRatio="xMidYMid slice"
-      />
-      <!-- 邊框 -->
-      <circle
-        cx="354.5073552943281"
-        cy="353.6730419835148"
-        r="14"
-        fill="none"
-        stroke="#a371f7"
-        stroke-width="1.5"
-        opacity="0.8"
-      />
-    </g>
-
-    <g class="star" data-user="evanphx">
-      <!-- 光暈 -->
-      <circle
-        cx="400.6617480149225"
-        cy="225.6988678659556"
-        r="20"
-        fill="url(#glow-2)"
-        opacity="0.6"
-      />
-      <!-- 頭像 -->
-      <clipPath id="clip-evanphx">
-        <circle cx="400.6617480149225" cy="225.6988678659556" r="14" />
-      </clipPath>
-      <image
-        href="https://github.com/evanphx.png?s=56"
-        x="386.6617480149225"
-        y="211.6988678659556"
-        width="28"
-        height="28"
-        clip-path="url(#clip-evanphx)"
-        preserveAspectRatio="xMidYMid slice"
-      />
-      <!-- 邊框 -->
-      <circle
-        cx="400.6617480149225"
-        cy="225.6988678659556"
-        r="14"
-        fill="none"
-        stroke="#f778ba"
-        stroke-width="1.5"
-        opacity="0.8"
-      />
-    </g>
-
-    <g class="star" data-user="tpope">
-      <!-- 光暈 -->
-      <circle
-        cx="454.21291293278244"
-        cy="349.229901275809"
-        r="20"
-        fill="url(#glow-0)"
-        opacity="0.6"
-      />
-      <!-- 頭像 -->
-      <clipPath id="clip-tpope">
-        <circle cx="454.21291293278244" cy="349.229901275809" r="14" />
-      </clipPath>
-      <image
-        href="https://github.com/tpope.png?s=56"
-        x="440.21291293278244"
-        y="335.229901275809"
-        width="28"
-        height="28"
-        clip-path="url(#clip-tpope)"
-        preserveAspectRatio="xMidYMid slice"
-      />
-      <!-- 邊框 -->
-      <circle
-        cx="454.21291293278244"
-        cy="349.229901275809"
-        r="14"
-        fill="none"
-        stroke="#58a6ff"
-        stroke-width="1.5"
-        opacity="0.8"
-      />
-    </g>
-
-    <g class="star" data-user="mattn">
-      <!-- 光暈 -->
-      <circle
-        cx="326.6619283142594"
-        cy="304.6407075538237"
-        r="20"
-        fill="url(#glow-0)"
-        opacity="0.6"
-      />
-      <!-- 頭像 -->
-      <clipPath id="clip-mattn">
-        <circle cx="326.6619283142594" cy="304.6407075538237" r="14" />
-      </clipPath>
-      <image
-        href="https://github.com/mattn.png?s=56"
-        x="312.6619283142594"
-        y="290.6407075538237"
-        width="28"
-        height="28"
-        clip-path="url(#clip-mattn)"
-        preserveAspectRatio="xMidYMid slice"
-      />
-      <!-- 邊框 -->
-      <circle
-        cx="326.6619283142594"
-        cy="304.6407075538237"
-        r="14"
-        fill="none"
-        stroke="#58a6ff"
-        stroke-width="1.5"
-        opacity="0.8"
-      />
-    </g>
-
-    <g class="star" data-user="junegunn">
-      <!-- 光暈 -->
-      <circle
-        cx="452.31846533332185"
-        cy="245.44617259111504"
-        r="20"
-        fill="url(#glow-3)"
-        opacity="0.6"
-      />
-      <!-- 頭像 -->
-      <clipPath id="clip-junegunn">
-        <circle cx="452.31846533332185" cy="245.44617259111504" r="14" />
-      </clipPath>
-      <image
-        href="https://github.com/junegunn.png?s=56"
-        x="438.31846533332185"
-        y="231.44617259111504"
-        width="28"
-        height="28"
-        clip-path="url(#clip-junegunn)"
-        preserveAspectRatio="xMidYMid slice"
-      />
-      <!-- 邊框 -->
-      <circle
-        cx="452.31846533332185"
-        cy="245.44617259111504"
-        r="14"
-        fill="none"
-        stroke="#7ee787"
-        stroke-width="1.5"
-        opacity="0.8"
-      />
-    </g>
-
-    <g class="star" data-user="sharkdp">
-      <!-- 光暈 -->
-      <circle
-        cx="396.5856869424989"
-        cy="378.2955790128018"
-        r="20"
-        fill="url(#glow-2)"
-        opacity="0.6"
-      />
-      <!-- 頭像 -->
-      <clipPath id="clip-sharkdp">
-        <circle cx="396.5856869424989" cy="378.2955790128018" r="14" />
-      </clipPath>
-      <image
-        href="https://github.com/sharkdp.png?s=56"
-        x="382.5856869424989"
-        y="364.2955790128018"
-        width="28"
-        height="28"
-        clip-path="url(#clip-sharkdp)"
-        preserveAspectRatio="xMidYMid slice"
-      />
-      <!-- 邊框 -->
-      <circle
-        cx="396.5856869424989"
-        cy="378.2955790128018"
-        r="14"
-        fill="none"
-        stroke="#f778ba"
-        stroke-width="1.5"
-        opacity="0.8"
-      />
-    </g>
-
-    <g class="star" data-user="BurntSushi">
-      <!-- 光暈 -->
-      <circle
-        cx="355.0752318759399"
-        cy="227.6641567692211"
-        r="20"
-        fill="url(#glow-0)"
-        opacity="0.6"
-      />
-      <!-- 頭像 -->
-      <clipPath id="clip-BurntSushi">
-        <circle cx="355.0752318759399" cy="227.6641567692211" r="14" />
-      </clipPath>
-      <image
-        href="https://github.com/BurntSushi.png?s=56"
-        x="341.0752318759399"
-        y="213.6641567692211"
-        width="28"
-        height="28"
-        clip-path="url(#clip-BurntSushi)"
-        preserveAspectRatio="xMidYMid slice"
-      />
-      <!-- 邊框 -->
-      <circle
-        cx="355.0752318759399"
-        cy="227.6641567692211"
-        r="14"
-        fill="none"
-        stroke="#58a6ff"
-        stroke-width="1.5"
-        opacity="0.8"
-      />
-    </g>
   </g>
 
   <!-- 標題 -->
   <text x="400" y="30" text-anchor="middle" fill="#8b949e" font-family="system-ui, sans-serif" font-size="12">
-    ✨ 20 Stargazers Galaxy ✨
+    ✨ 1 Stargazers Galaxy ✨
   </text>
 
   <!-- 說明文字 -->
