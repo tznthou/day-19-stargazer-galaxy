@@ -284,6 +284,15 @@ glowSize: 40,  // Glow diameter
 - Free accounts: 2000 minutes/month
 - `concurrency` is configured to prevent parallel runs
 
+### Why No npm Cache?
+
+GitHub Actions' `cache: 'npm'` requires `package-lock.json` to function. This project doesn't commit a lock file to keep things simple, so npm cache is not enabled.
+
+If you want to enable cache for faster builds (~10-15 seconds saved):
+1. Run `npm install` locally to generate `package-lock.json`
+2. Commit `package-lock.json` to your repo
+3. Add `cache: 'npm'` to `galaxy.yml`
+
 ### Anti-Abuse
 
 ```yaml

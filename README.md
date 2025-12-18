@@ -284,6 +284,15 @@ glowSize: 40,  // 光暈直徑
 - 免費帳號：2000 分鐘/月
 - 已設定 `concurrency` 避免同時多個執行
 
+### 為什麼沒有 npm cache？
+
+GitHub Actions 的 `cache: 'npm'` 需要 `package-lock.json` 才能運作。本專案為了保持簡潔，沒有提交 lock file，因此不使用 npm cache。
+
+如果你想啟用 cache 加速（約省 10-15 秒）：
+1. 本地執行 `npm install` 生成 `package-lock.json`
+2. 將 `package-lock.json` commit 到 repo
+3. 在 `galaxy.yml` 加入 `cache: 'npm'`
+
 ### 防濫用
 
 ```yaml
