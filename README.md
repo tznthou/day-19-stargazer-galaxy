@@ -303,6 +303,15 @@ concurrency:
 
 如果有人 star → unstar 循環，舊的 workflow 會自動取消。
 
+### Race Condition 處理
+
+當多個 workflow 同時執行（例如同時有人 star），可能會遇到 push 衝突。Workflow 使用 `git pull --rebase --autostash` 來處理：
+
+- `--rebase`：將本地 commit 放到遠端最新 commit 之後
+- `--autostash`：自動暫存 `npm install` 產生的 `package-lock.json` 等未追蹤檔案
+
+這確保即使有競爭狀況，Action 也能順利完成。
+
 ---
 
 ## 隱私說明
