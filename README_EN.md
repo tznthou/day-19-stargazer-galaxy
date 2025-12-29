@@ -17,7 +17,7 @@ Turn every stargazer into a star in your project's galaxy.
 ## Features
 
 - **Automated Galaxy Generation**: GitHub Action listens to star events, fully automatic
-- **Golden Spiral Layout**: Fibonacci spiral algorithm — order within chaos
+- **Golden Spiral Layout**: Logarithmic spiral algorithm — classic golden spiral curve
 - **Permanent Position**: User position determined by GitHub ID, forever theirs
 - **Self-Healing**: Daily sync at UTC 00:00 ensures accuracy
 - **Hybrid Glow**: Avatar + colorful glow, 5 colors randomly assigned
@@ -36,11 +36,11 @@ There are several stargazer visualization tools available. Here's how we compare
 | **Update Method** | Action commit | Action edits README | Live API | Live API |
 | **Self-hosted** | ✅ | ✅ | ❌ | ❌ |
 | **Customization** | High (edit JS) | Medium (params) | Low | Low |
-| **Layout Algorithm** | Fibonacci Spiral | Sequential | Grid | Time Series |
+| **Layout Algorithm** | Logarithmic Spiral | Sequential | Grid | Time Series |
 
 ### What Makes Us Different
 
-- **Golden Spiral Layout**: Using 137.508° golden angle, not boring grids or lists
+- **Golden Spiral Layout**: Logarithmic spiral algorithm creates classic spiral curves, not boring grids or lists
 - **Seeded Random**: Same person always at the same position, coordinates determined by username
 - **Art-focused**: Colorful glow + galaxy background, visual aesthetics over pure functionality
 - **Fully Self-hosted**: No dependency on third-party services, data stays in your repo
@@ -121,19 +121,23 @@ flowchart LR
 
 ## Algorithm
 
-### Golden Spiral (Fibonacci Spiral)
+### Golden Spiral (Logarithmic Spiral)
 
-Using nature's most beautiful arrangement — the golden angle (~137.508°):
+Using the logarithmic spiral formula to create classic golden spiral curves:
 
 ```
-radius = scale × √n
-angle = n × 137.508°
+radius = a × e^(b×θ)
+angle = n × 30°
 ```
 
-This pattern appears in:
-- Sunflower seeds
-- Pinecone scales
+- `a`: Initial radius
+- `b`: Growth rate
+- `θ`: Cumulative angle
+
+This curve appears in:
+- Nautilus shells
 - Galaxy spiral arms
+- Typhoon cloud formations
 
 ### Seeded Random
 
@@ -141,7 +145,7 @@ Each user's slight offset is determined by their username:
 
 ```javascript
 const rand = seededRandom(username);
-const offset = (rand() - 0.5) * 10;
+const offset = (rand() - 0.5) * 3; // Preserves spiral shape
 ```
 
 Ensures the same person is always at the same position, even after regeneration.
@@ -242,10 +246,12 @@ const CONFIG = {
 };
 ```
 
-### Change Spiral Density
+### Change Spiral Parameters
 
 ```javascript
-spiralScale: 18,  // Larger = sparser, smaller = denser
+spiralA: 8,        // Initial radius
+spiralGrowth: 0.15, // Growth rate (larger = faster expansion)
+angleStep: Math.PI / 6,  // Angle between each star (30 degrees)
 ```
 
 ### Change Glow Colors
@@ -332,11 +338,11 @@ Each star is a connection. Someone found it useful, interesting, worth bookmarki
 
 These connections accumulate into the shape of a community. The spiral ensures everyone has their own place — no overlapping, no crowding.
 
-### The Aesthetics of Golden Angle
+### The Aesthetics of Logarithmic Spiral
 
-137.508° comes from nature's optimal solution. Sunflowers use it to arrange seeds so each gets maximum sunlight.
+The logarithmic spiral is one of nature's most elegant curves. Nautilus uses it to build shells, galaxies use it to arrange stars.
 
-We use it to arrange stargazers, hoping every supporter can be seen.
+We use it to arrange stargazers, letting every supporter extend along the spiral curve, forming a galaxy unique to this project.
 
 ### For Vibe Coders
 
