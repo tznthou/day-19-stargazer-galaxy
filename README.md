@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub Action](https://img.shields.io/badge/GitHub-Action-2088FF.svg)](https://github.com/features/actions)
-[![Node.js](https://img.shields.io/badge/Node.js-20+-339933.svg)](https://nodejs.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-22+-339933.svg)](https://nodejs.org/)
 
 [← 回到 Muripo HQ](https://tznthou.github.io/muripo-hq/) | [English](README_EN.md)
 
@@ -157,7 +157,7 @@ const offset = (rand() - 0.5) * 3; // 保持螺旋形狀
 | 技術 | 用途 | 備註 |
 |------|------|------|
 | GitHub Actions | 自動化觸發 | watch + schedule + dispatch |
-| Node.js 20+ | 執行環境 | ES Modules |
+| Node.js 22+ | 執行環境 | ES Modules |
 | GitHub API | 資料來源 | Stargazers endpoint |
 | Puppeteer | PNG 渲染 | Headless Chrome 截圖 |
 | HTML/CSS | 排版樣式 | Radial gradient 光暈 |
@@ -189,6 +189,7 @@ open assets/galaxy.svg
 .github/workflows/galaxy.yml  → Action 設定檔
 scripts/generate-galaxy.js    → 核心繪圖腳本
 package.json                  → 依賴設定
+.nvmrc                        → Node 版本（workflow 從這裡讀）
 assets/                       → 輸出目錄（空的即可）
 ```
 

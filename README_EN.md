@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub Action](https://img.shields.io/badge/GitHub-Action-2088FF.svg)](https://github.com/features/actions)
-[![Node.js](https://img.shields.io/badge/Node.js-20+-339933.svg)](https://nodejs.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-22+-339933.svg)](https://nodejs.org/)
 
 [← Back to Muripo HQ](https://tznthou.github.io/muripo-hq/) | [中文](README.md)
 
@@ -157,7 +157,7 @@ Ensures the same person is always at the same position, even after regeneration.
 | Technology | Purpose | Notes |
 |------------|---------|-------|
 | GitHub Actions | Automation | watch + schedule + dispatch |
-| Node.js 20+ | Runtime | ES Modules |
+| Node.js 22+ | Runtime | ES Modules |
 | GitHub API | Data Source | Stargazers endpoint |
 | Puppeteer | PNG Rendering | Headless Chrome screenshot |
 | HTML/CSS | Layout & Style | Radial gradient glow |
@@ -189,6 +189,7 @@ Copy these files to your repository:
 .github/workflows/galaxy.yml  → Action config
 scripts/generate-galaxy.js    → Core generation script
 package.json                  → Dependencies
+.nvmrc                        → Node version (read by the workflow)
 assets/                       → Output directory (empty is fine)
 ```
 
