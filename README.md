@@ -189,6 +189,7 @@ open assets/galaxy.svg
 .github/workflows/galaxy.yml  → Action 設定檔
 scripts/generate-galaxy.js    → 核心繪圖腳本
 package.json                  → 依賴設定
+package-lock.json             → 鎖定依賴版本（npm ci 需要）
 .nvmrc                        → Node 版本（workflow 從這裡讀）
 assets/                       → 輸出目錄（空的即可）
 ```
@@ -226,6 +227,8 @@ day-19-stargazer-galaxy/
 ├── assets/
 │   └── galaxy.png              # 生成的銀河圖
 ├── package.json
+├── package-lock.json           # 鎖定依賴版本
+├── .nvmrc                      # Node 版本
 ├── README.md                   # 說明文件（中文）
 └── README_EN.md                # 說明文件（英文）
 ```
@@ -291,14 +294,13 @@ glowSize: 40,  // 光暈直徑
 - 免費帳號：2000 分鐘/月
 - 已設定 `concurrency` 避免同時多個執行
 
-### 為什麼沒有 npm cache？
+### 為什麼要提交 lock file？
 
-GitHub Actions 的 `cache: 'npm'` 需要 `package-lock.json` 才能運作。本專案為了保持簡潔，沒有提交 lock file，因此不使用 npm cache。
+Workflow 用 `npm ci` 照 `package-lock.json` 安裝，每次執行裝到的套件版本都一樣，不會在沒人注意時換成 npm 上剛發布的新版。這個 job 有 repo 的寫入權限，安裝階段跑的腳本也拿得到，固定版本可以避免被劫持的新版自動裝進來。
 
-如果你想啟用 cache 加速（約省 10-15 秒）：
-1. 本地執行 `npm install` 生成 `package-lock.json`
-2. 將 `package-lock.json` commit 到 repo
-3. 在 `galaxy.yml` 加入 `cache: 'npm'`
+puppeteer 版本固定後，它下載的 Chrome 版本也跟著固定，產出的圖不會因為 Chrome 改版而突然改變。
+
+要升級依賴時，在本地執行 `npm install` 更新 `package-lock.json`，再一起 commit。想用 cache 加速（約省 10-15 秒），可以在 `galaxy.yml` 的 setup-node 加上 `cache: 'npm'`。
 
 ### 防濫用
 

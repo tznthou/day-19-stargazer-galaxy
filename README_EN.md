@@ -189,6 +189,7 @@ Copy these files to your repository:
 .github/workflows/galaxy.yml  → Action config
 scripts/generate-galaxy.js    → Core generation script
 package.json                  → Dependencies
+package-lock.json             → Locked dependency versions (required by npm ci)
 .nvmrc                        → Node version (read by the workflow)
 assets/                       → Output directory (empty is fine)
 ```
@@ -226,6 +227,8 @@ day-19-stargazer-galaxy/
 ├── assets/
 │   └── galaxy.png              # Generated galaxy image
 ├── package.json
+├── package-lock.json           # Locked dependency versions
+├── .nvmrc                      # Node version
 ├── README.md                   # Documentation (Chinese)
 └── README_EN.md                # Documentation (English)
 ```
@@ -291,14 +294,13 @@ glowSize: 40,  // Glow diameter
 - Free accounts: 2000 minutes/month
 - `concurrency` is configured to prevent parallel runs
 
-### Why No npm Cache?
+### Why Commit the Lock File?
 
-GitHub Actions' `cache: 'npm'` requires `package-lock.json` to function. This project doesn't commit a lock file to keep things simple, so npm cache is not enabled.
+The workflow installs with `npm ci` from `package-lock.json`, so every run gets the same package versions instead of whatever was just published to npm. The job has write access to the repo, and install scripts can use it too, so pinned versions keep a hijacked new release from being installed automatically.
 
-If you want to enable cache for faster builds (~10-15 seconds saved):
-1. Run `npm install` locally to generate `package-lock.json`
-2. Commit `package-lock.json` to your repo
-3. Add `cache: 'npm'` to `galaxy.yml`
+Pinning puppeteer also pins the Chrome version it downloads, so the image doesn't suddenly change because Chrome was updated.
+
+To upgrade dependencies, run `npm install` locally to update `package-lock.json` and commit it. To speed up installs (~10-15 seconds), add `cache: 'npm'` to the setup-node step in `galaxy.yml`.
 
 ### Anti-Abuse
 
