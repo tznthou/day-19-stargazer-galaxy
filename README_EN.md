@@ -19,7 +19,7 @@ Turn every stargazer into a star in your project's galaxy.
 - **Automated Galaxy Generation**: GitHub Action listens to star events, fully automatic
 - **Golden Spiral Layout**: Logarithmic spiral algorithm — classic golden spiral curve
 - **Permanent Position**: User position determined by GitHub ID, forever theirs
-- **Self-Healing**: Daily sync at UTC 00:00 ensures accuracy
+- **Updates Only on Change**: The same stargazers always produce the identical image, so nothing is committed unless something changed
 - **Hybrid Glow**: Avatar + colorful glow, 5 colors randomly assigned
 
 ---
@@ -94,7 +94,6 @@ This line of code never changes. But since the `assets/galaxy.png` file gets upd
 flowchart LR
     subgraph Trigger["Triggers"]
         Star["⭐ Star Event"]
-        Cron["🕐 Daily Sync"]
         Manual["🔘 Manual Run"]
     end
 
@@ -111,7 +110,6 @@ flowchart LR
     end
 
     Star --> Fetch
-    Cron --> Fetch
     Manual --> Fetch
     Fetch --> Calc --> Gen --> Commit
     Commit --> PNG --> README
@@ -156,7 +154,7 @@ Ensures the same person is always at the same position, even after regeneration.
 
 | Technology | Purpose | Notes |
 |------------|---------|-------|
-| GitHub Actions | Automation | watch + schedule + dispatch |
+| GitHub Actions | Automation | watch + dispatch |
 | Node.js 22+ | Runtime | ES Modules |
 | GitHub API | Data Source | Stargazers endpoint |
 | Puppeteer | PNG Rendering | Headless Chrome screenshot |
@@ -290,7 +288,7 @@ glowSize: 40,  // Glow diameter
 
 ### Action Minutes
 
-- Each star/unstar triggers an Action
+- Each star triggers an Action (unstarring does not)
 - Free accounts: 2000 minutes/month
 - `concurrency` is configured to prevent parallel runs
 
@@ -329,7 +327,7 @@ This project uses GitHub's public API to retrieve stargazer information (usernam
 
 **If you don't want to appear in the galaxy, simply unstar.**
 
-The next Action run (daily sync or when someone stars) will remove your position.
+The next Action run (when someone stars or the maintainer runs it manually) will remove your position.
 
 ---
 

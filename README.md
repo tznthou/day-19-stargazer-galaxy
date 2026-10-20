@@ -19,7 +19,7 @@
 - **自動化星圖繪製**：GitHub Action 監聽 Star 事件，無需人工介入
 - **黃金螺旋排列**：採用對數螺旋演算法，形成經典的黃金螺旋曲線
 - **永久印記**：使用者位置由 GitHub ID 決定，座標永遠屬於他
-- **自我修復**：每日 UTC 00:00 自動同步，確保與實際 Star 一致
+- **只在變動時更新**：同樣的 Stargazers 產出完全相同的圖，沒有變動就不會 commit
 - **混合光暈**：頭像 + 彩色光暈，5 種顏色隨機分配
 
 ---
@@ -94,7 +94,6 @@ README.md 裡永遠只有這一行：
 flowchart LR
     subgraph Trigger["觸發條件"]
         Star["⭐ Star Event"]
-        Cron["🕐 Daily Sync"]
         Manual["🔘 Manual Run"]
     end
 
@@ -111,7 +110,6 @@ flowchart LR
     end
 
     Star --> Fetch
-    Cron --> Fetch
     Manual --> Fetch
     Fetch --> Calc --> Gen --> Commit
     Commit --> PNG --> README
@@ -156,7 +154,7 @@ const offset = (rand() - 0.5) * 3; // 保持螺旋形狀
 
 | 技術 | 用途 | 備註 |
 |------|------|------|
-| GitHub Actions | 自動化觸發 | watch + schedule + dispatch |
+| GitHub Actions | 自動化觸發 | watch + dispatch |
 | Node.js 22+ | 執行環境 | ES Modules |
 | GitHub API | 資料來源 | Stargazers endpoint |
 | Puppeteer | PNG 渲染 | Headless Chrome 截圖 |
@@ -290,7 +288,7 @@ glowSize: 40,  // 光暈直徑
 
 ### Action Minutes
 
-- 每次 star/unstar 都會觸發 Action
+- 每次有人 star 都會觸發 Action（unstar 不會觸發）
 - 免費帳號：2000 分鐘/月
 - 已設定 `concurrency` 避免同時多個執行
 
@@ -329,7 +327,7 @@ concurrency:
 
 **如果你不希望出現在星圖中，unstar 即可自動移除。**
 
-下次 Action 執行時（每日同步或有人 star 時），你的位置就會消失。
+下次 Action 執行時（有人 star 或維護者手動執行時），你的位置就會消失。
 
 ---
 
