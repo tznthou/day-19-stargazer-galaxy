@@ -17,7 +17,7 @@ Turn every stargazer into a star in your project's galaxy.
 ## Features
 
 - **Automated Galaxy Generation**: GitHub Action listens to star events, fully automatic
-- **Golden Spiral Layout**: Logarithmic spiral algorithm — classic golden spiral curve
+- **Sunflower Layout**: Fermat spiral with the golden angle, spread as evenly as sunflower seeds — no clumping with a few stars, no overflow with many
 - **Permanent Position**: User position determined by GitHub ID, forever theirs
 - **Updates Only on Change**: The same stargazers always produce the identical image, so nothing is committed unless something changed
 - **Hybrid Glow**: Avatar + colorful glow, 5 colors randomly assigned
@@ -30,17 +30,17 @@ There are several stargazer visualization tools available. Here's how we compare
 
 | Feature | **Stargazer Galaxy** | [Repository Roster](https://github.com/varunsridharan/action-repository-roster) | [Repo Roster](https://reporoster.com/) | [Star History](https://star-history.com/) |
 |---------|:--------------------:|:-----------------:|:-----------:|:------------:|
-| **Visual Style** | 🌌 Golden Spiral | 📋 Table/List | 🔲 Grid Cards | 📈 Line Chart |
+| **Visual Style** | 🌌 Sunflower Galaxy | 📋 Table/List | 🔲 Grid Cards | 📈 Line Chart |
 | **Display** | Avatar + Glow | Avatar ± Name | Avatar Grid | Statistics |
 | **Output Format** | PNG | HTML/MD | SVG | SVG |
 | **Update Method** | Action commit | Action edits README | Live API | Live API |
 | **Self-hosted** | ✅ | ✅ | ❌ | ❌ |
 | **Customization** | High (edit JS) | Medium (params) | Low | Low |
-| **Layout Algorithm** | Logarithmic Spiral | Sequential | Grid | Time Series |
+| **Layout Algorithm** | Fermat Spiral (golden angle) | Sequential | Grid | Time Series |
 
 ### What Makes Us Different
 
-- **Golden Spiral Layout**: Logarithmic spiral algorithm creates classic spiral curves, not boring grids or lists
+- **Sunflower Layout**: Fermat spiral with the golden angle, as natural as a sunflower head — not boring grids or lists
 - **Seeded Random**: Same person always at the same position, coordinates determined by username
 - **Art-focused**: Colorful glow + galaxy background, visual aesthetics over pure functionality
 - **Fully Self-hosted**: No dependency on third-party services, data stays in your repo
@@ -65,7 +65,7 @@ Action runs generate-galaxy.js
        ↓
 Script calls GitHub API to get all Stargazers
        ↓
-Golden spiral algorithm calculates each position
+Fermat spiral (golden angle) calculates each position
        ↓
 New assets/galaxy.png is generated
        ↓
@@ -99,7 +99,7 @@ flowchart LR
 
     subgraph Action["GitHub Action"]
         Fetch["📡 Fetch API<br/>Get Stargazers"]
-        Calc["📐 Calculate<br/>Golden Spiral"]
+        Calc["📐 Calculate<br/>Fermat Spiral"]
         Gen["🎨 Generate<br/>PNG Image"]
         Commit["💾 Commit<br/>Push Update"]
     end
@@ -119,23 +119,27 @@ flowchart LR
 
 ## Algorithm
 
-### Golden Spiral (Logarithmic Spiral)
+### Fermat Spiral (Sunflower Pattern)
 
-Using the logarithmic spiral formula to create classic golden spiral curves:
+A Fermat spiral with the golden angle — the same pattern sunflowers use for their seeds:
 
 ```
-radius = a × e^(b×θ)
-angle = n × 30°
+radius = c × √n
+angle = n × 137.5°
 ```
 
-- `a`: Initial radius
-- `b`: Growth rate
-- `θ`: Cumulative angle
+- `c`: Spacing (`CONFIG.spacing`)
+- `n`: Stargazer number (in starring order)
+- `137.5°`: The golden angle, which drops each star into the gaps left by the earlier ones
 
-This curve appears in:
-- Nautilus shells
-- Galaxy spiral arms
-- Typhoon cloud formations
+This pattern appears in:
+- Sunflower heads
+- Pine cone scales
+- Daisy centers
+
+Spacing stays roughly even whether there are 5 stars or 150. New stars are added on the outside, so existing stars never move.
+
+Earlier versions used a logarithmic spiral, which clumped together with only a few stars and ran off the canvas past about 47.
 
 ### Seeded Random
 
@@ -248,13 +252,13 @@ const CONFIG = {
 };
 ```
 
-### Change Spiral Parameters
+### Change Spacing
 
 ```javascript
-spiralA: 8,        // Initial radius
-spiralGrowth: 0.15, // Growth rate (larger = faster expansion)
-angleStep: Math.PI / 6,  // Angle between each star (30 degrees)
+spacing: 22,  // Spacing (larger = looser; too large and big repos run off the canvas)
 ```
+
+The default of 22 fits about 170 stars on the 800×600 canvas.
 
 ### Change Glow Colors
 
@@ -339,11 +343,11 @@ Each star is a connection. Someone found it useful, interesting, worth bookmarki
 
 These connections accumulate into the shape of a community. The spiral ensures everyone has their own place — no overlapping, no crowding.
 
-### The Aesthetics of Logarithmic Spiral
+### The Aesthetics of the Sunflower
 
-The logarithmic spiral is one of nature's most elegant curves. Nautilus uses it to build shells, galaxies use it to arrange stars.
+Sunflowers arrange their seeds by the golden angle. Each seed lands in the gaps left by the earlier ones, so the head never gets crowded no matter how big it grows.
 
-We use it to arrange stargazers, letting every supporter extend along the spiral curve, forming a galaxy unique to this project.
+We use it to arrange stargazers, giving every supporter a place of their own, growing outward ring by ring into a galaxy unique to this project.
 
 ### For Vibe Coders
 

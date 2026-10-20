@@ -21,11 +21,9 @@ const CONFIG = {
   centerX: 400,
   centerY: 300,
 
-  // 黃金螺旋參數（對數螺旋）
-  phi: (1 + Math.sqrt(5)) / 2, // 黃金比例 φ ≈ 1.618
-  spiralA: 8, // 螺旋起始半徑
-  spiralGrowth: 0.15, // 螺旋增長率（每弧度）
-  angleStep: Math.PI / 6, // 每顆星之間的角度間隔（30度）
+  // 費馬螺旋參數（向日葵排列）
+  spacing: 22, // 間距：第 n 顆星離中心 spacing × √n
+  goldenAngle: Math.PI * (3 - Math.sqrt(5)), // 黃金角 ≈ 137.5°
 
   // 星星樣式
   starSize: 28, // 頭像大小
@@ -55,16 +53,16 @@ function seededRandom(seed) {
 }
 
 // ============================================
-// 黃金螺旋座標計算（對數螺旋）
+// 費馬螺旋座標計算（向日葵排列）
 // ============================================
 function calculatePosition(index, username) {
   const rand = seededRandom(username);
 
-  // 對數螺旋公式：r = a * e^(b*θ)
-  // 這會產生經典的黃金螺旋曲線
+  // 費馬螺旋：r = c * √n，θ = n * 黃金角
+  // 向日葵種子的排法，不論人多人少都均勻散開；新的星只會加在外圈
   const n = index + 1;
-  const angle = n * CONFIG.angleStep; // 累積角度
-  const radius = CONFIG.spiralA * Math.exp(CONFIG.spiralGrowth * angle);
+  const angle = n * CONFIG.goldenAngle;
+  const radius = CONFIG.spacing * Math.sqrt(n);
 
   // 微小隨機偏移（保持螺旋形狀但增加自然感）
   const offsetRadius = radius + (rand() - 0.5) * 3;
