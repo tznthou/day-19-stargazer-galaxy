@@ -150,6 +150,25 @@ function getDemoData() {
 }
 
 // ============================================
+// 頭像預先下載成 data URI
+// （讓 Chrome 從網路載入頭像，每次渲染的像素都會有細微差異）
+// ============================================
+async function inlineAvatars(stargazers) {
+  return Promise.all(stargazers.map(async user => {
+    const url = `${user.avatarUrl}?s=${CONFIG.starSize * 2}`;
+    try {
+      const response = await fetch(url, { signal: AbortSignal.timeout(10000) });
+      if (!response.ok) return { ...user, avatarSrc: url };
+      const type = response.headers.get('content-type');
+      const data = Buffer.from(await response.arrayBuffer()).toString('base64');
+      return { ...user, avatarSrc: `data:${type};base64,${data}` };
+    } catch {
+      return { ...user, avatarSrc: url };
+    }
+  }));
+}
+
+// ============================================
 // 生成 HTML（用於 Puppeteer 渲染）
 // ============================================
 function generateHTML(stargazers) {
@@ -161,7 +180,7 @@ function generateHTML(stargazers) {
     return `
     <div class="star" style="left: ${pos.x}px; top: ${pos.y}px;">
       <div class="glow" style="background: radial-gradient(circle, ${glowColor}cc 0%, ${glowColor}4d 50%, transparent 70%);"></div>
-      <img src="${user.avatarUrl}?s=${CONFIG.starSize * 2}" alt="${user.username}" />
+      <img src="${user.avatarSrc}" alt="${user.username}" />
       <div class="border" style="border-color: ${glowColor};"></div>
     </div>`;
   }).join('\n');
@@ -347,7 +366,7 @@ async function main() {
   }
 
   console.log('🎨 Generating galaxy...');
-  const html = generateHTML(stargazers);
+  const html = generateHTML(await inlineAvatars(stargazers));
 
   // 確保 assets 目錄存在
   const assetsDir = join(__dirname, '..', 'assets');
