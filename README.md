@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub Action](https://img.shields.io/badge/GitHub-Action-2088FF.svg)](https://github.com/features/actions)
-[![Node.js](https://img.shields.io/badge/Node.js-20+-339933.svg)](https://nodejs.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-22+-339933.svg)](https://nodejs.org/)
 
 [← 回到 Muripo HQ](https://tznthou.github.io/muripo-hq/) | [English](README_EN.md)
 
@@ -19,7 +19,7 @@
 - **自動化星圖繪製**：GitHub Action 監聽 Star 事件，無需人工介入
 - **黃金螺旋排列**：採用對數螺旋演算法，形成經典的黃金螺旋曲線
 - **永久印記**：使用者位置由 GitHub ID 決定，座標永遠屬於他
-- **自我修復**：每日 UTC 00:00 自動同步，確保與實際 Star 一致
+- **只在變動時更新**：同樣的 Stargazers 產出完全相同的圖，沒有變動就不會 commit
 - **混合光暈**：頭像 + 彩色光暈，5 種顏色隨機分配
 
 ---
@@ -94,7 +94,6 @@ README.md 裡永遠只有這一行：
 flowchart LR
     subgraph Trigger["觸發條件"]
         Star["⭐ Star Event"]
-        Cron["🕐 Daily Sync"]
         Manual["🔘 Manual Run"]
     end
 
@@ -111,7 +110,6 @@ flowchart LR
     end
 
     Star --> Fetch
-    Cron --> Fetch
     Manual --> Fetch
     Fetch --> Calc --> Gen --> Commit
     Commit --> PNG --> README
@@ -156,8 +154,8 @@ const offset = (rand() - 0.5) * 3; // 保持螺旋形狀
 
 | 技術 | 用途 | 備註 |
 |------|------|------|
-| GitHub Actions | 自動化觸發 | watch + schedule + dispatch |
-| Node.js 20+ | 執行環境 | ES Modules |
+| GitHub Actions | 自動化觸發 | watch + dispatch |
+| Node.js 22+ | 執行環境 | ES Modules |
 | GitHub API | 資料來源 | Stargazers endpoint |
 | Puppeteer | PNG 渲染 | Headless Chrome 截圖 |
 | HTML/CSS | 排版樣式 | Radial gradient 光暈 |
@@ -189,6 +187,8 @@ open assets/galaxy.svg
 .github/workflows/galaxy.yml  → Action 設定檔
 scripts/generate-galaxy.js    → 核心繪圖腳本
 package.json                  → 依賴設定
+package-lock.json             → 鎖定依賴版本（npm ci 需要）
+.nvmrc                        → Node 版本（workflow 從這裡讀）
 assets/                       → 輸出目錄（空的即可）
 ```
 
@@ -225,6 +225,8 @@ day-19-stargazer-galaxy/
 ├── assets/
 │   └── galaxy.png              # 生成的銀河圖
 ├── package.json
+├── package-lock.json           # 鎖定依賴版本
+├── .nvmrc                      # Node 版本
 ├── README.md                   # 說明文件（中文）
 └── README_EN.md                # 說明文件（英文）
 ```
@@ -286,18 +288,17 @@ glowSize: 40,  // 光暈直徑
 
 ### Action Minutes
 
-- 每次 star/unstar 都會觸發 Action
+- 每次有人 star 都會觸發 Action（unstar 不會觸發）
 - 免費帳號：2000 分鐘/月
 - 已設定 `concurrency` 避免同時多個執行
 
-### 為什麼沒有 npm cache？
+### 為什麼要提交 lock file？
 
-GitHub Actions 的 `cache: 'npm'` 需要 `package-lock.json` 才能運作。本專案為了保持簡潔，沒有提交 lock file，因此不使用 npm cache。
+Workflow 用 `npm ci` 照 `package-lock.json` 安裝，每次執行裝到的套件版本都一樣，不會在沒人注意時換成 npm 上剛發布的新版。這個 job 有 repo 的寫入權限，安裝階段跑的腳本也拿得到，固定版本可以避免被劫持的新版自動裝進來。
 
-如果你想啟用 cache 加速（約省 10-15 秒）：
-1. 本地執行 `npm install` 生成 `package-lock.json`
-2. 將 `package-lock.json` commit 到 repo
-3. 在 `galaxy.yml` 加入 `cache: 'npm'`
+puppeteer 版本固定後，它下載的 Chrome 版本也跟著固定，產出的圖不會因為 Chrome 改版而突然改變。
+
+要升級依賴時，在本地執行 `npm install` 更新 `package-lock.json`，再一起 commit。想用 cache 加速（約省 10-15 秒），可以在 `galaxy.yml` 的 setup-node 加上 `cache: 'npm'`。
 
 ### 防濫用
 
@@ -326,7 +327,7 @@ concurrency:
 
 **如果你不希望出現在星圖中，unstar 即可自動移除。**
 
-下次 Action 執行時（每日同步或有人 star 時），你的位置就會消失。
+下次 Action 執行時（有人 star 或維護者手動執行時），你的位置就會消失。
 
 ---
 

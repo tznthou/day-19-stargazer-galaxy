@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub Action](https://img.shields.io/badge/GitHub-Action-2088FF.svg)](https://github.com/features/actions)
-[![Node.js](https://img.shields.io/badge/Node.js-20+-339933.svg)](https://nodejs.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-22+-339933.svg)](https://nodejs.org/)
 
 [← Back to Muripo HQ](https://tznthou.github.io/muripo-hq/) | [中文](README.md)
 
@@ -19,7 +19,7 @@ Turn every stargazer into a star in your project's galaxy.
 - **Automated Galaxy Generation**: GitHub Action listens to star events, fully automatic
 - **Golden Spiral Layout**: Logarithmic spiral algorithm — classic golden spiral curve
 - **Permanent Position**: User position determined by GitHub ID, forever theirs
-- **Self-Healing**: Daily sync at UTC 00:00 ensures accuracy
+- **Updates Only on Change**: The same stargazers always produce the identical image, so nothing is committed unless something changed
 - **Hybrid Glow**: Avatar + colorful glow, 5 colors randomly assigned
 
 ---
@@ -94,7 +94,6 @@ This line of code never changes. But since the `assets/galaxy.png` file gets upd
 flowchart LR
     subgraph Trigger["Triggers"]
         Star["⭐ Star Event"]
-        Cron["🕐 Daily Sync"]
         Manual["🔘 Manual Run"]
     end
 
@@ -111,7 +110,6 @@ flowchart LR
     end
 
     Star --> Fetch
-    Cron --> Fetch
     Manual --> Fetch
     Fetch --> Calc --> Gen --> Commit
     Commit --> PNG --> README
@@ -156,8 +154,8 @@ Ensures the same person is always at the same position, even after regeneration.
 
 | Technology | Purpose | Notes |
 |------------|---------|-------|
-| GitHub Actions | Automation | watch + schedule + dispatch |
-| Node.js 20+ | Runtime | ES Modules |
+| GitHub Actions | Automation | watch + dispatch |
+| Node.js 22+ | Runtime | ES Modules |
 | GitHub API | Data Source | Stargazers endpoint |
 | Puppeteer | PNG Rendering | Headless Chrome screenshot |
 | HTML/CSS | Layout & Style | Radial gradient glow |
@@ -189,6 +187,8 @@ Copy these files to your repository:
 .github/workflows/galaxy.yml  → Action config
 scripts/generate-galaxy.js    → Core generation script
 package.json                  → Dependencies
+package-lock.json             → Locked dependency versions (required by npm ci)
+.nvmrc                        → Node version (read by the workflow)
 assets/                       → Output directory (empty is fine)
 ```
 
@@ -225,6 +225,8 @@ day-19-stargazer-galaxy/
 ├── assets/
 │   └── galaxy.png              # Generated galaxy image
 ├── package.json
+├── package-lock.json           # Locked dependency versions
+├── .nvmrc                      # Node version
 ├── README.md                   # Documentation (Chinese)
 └── README_EN.md                # Documentation (English)
 ```
@@ -286,18 +288,17 @@ glowSize: 40,  // Glow diameter
 
 ### Action Minutes
 
-- Each star/unstar triggers an Action
+- Each star triggers an Action (unstarring does not)
 - Free accounts: 2000 minutes/month
 - `concurrency` is configured to prevent parallel runs
 
-### Why No npm Cache?
+### Why Commit the Lock File?
 
-GitHub Actions' `cache: 'npm'` requires `package-lock.json` to function. This project doesn't commit a lock file to keep things simple, so npm cache is not enabled.
+The workflow installs with `npm ci` from `package-lock.json`, so every run gets the same package versions instead of whatever was just published to npm. The job has write access to the repo, and install scripts can use it too, so pinned versions keep a hijacked new release from being installed automatically.
 
-If you want to enable cache for faster builds (~10-15 seconds saved):
-1. Run `npm install` locally to generate `package-lock.json`
-2. Commit `package-lock.json` to your repo
-3. Add `cache: 'npm'` to `galaxy.yml`
+Pinning puppeteer also pins the Chrome version it downloads, so the image doesn't suddenly change because Chrome was updated.
+
+To upgrade dependencies, run `npm install` locally to update `package-lock.json` and commit it. To speed up installs (~10-15 seconds), add `cache: 'npm'` to the setup-node step in `galaxy.yml`.
 
 ### Anti-Abuse
 
@@ -326,7 +327,7 @@ This project uses GitHub's public API to retrieve stargazer information (usernam
 
 **If you don't want to appear in the galaxy, simply unstar.**
 
-The next Action run (daily sync or when someone stars) will remove your position.
+The next Action run (when someone stars or the maintainer runs it manually) will remove your position.
 
 ---
 
